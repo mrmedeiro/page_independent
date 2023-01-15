@@ -23,12 +23,10 @@ header {
 .logo {
     width:100px;
 }
-.logoimg {
-    width:80px;
-    height:80px;
-    background-color:#B28756;
-    border-radius:40px;
+.logoimg img{
+    width: 150px;
 }
+
 .menu-opener {
     display:none;
 }
@@ -58,13 +56,13 @@ header {
 }
 .menu li a:hover,
 .menu .active a {
-    border-bottom:5px solid #B28756;
-    color:#CCC;
+    border-bottom:5px solid ;
+    color:#1D9371;
 }
 
 .button {
     display:inline-block;
-    background-color:#B28756;
+    background-color:#1D9371;
     color:#FFF;
     text-transform: uppercase;
     font-size:12px;
@@ -78,7 +76,7 @@ header {
     background-color:#000;
 }
 .button--dark:hover {
-    background-color:#B28756;
+    background-color:#1D9371;
 }
 
 .banner {
@@ -89,17 +87,17 @@ header {
     background-position:bottom;
     overflow:hidden;
 }
-.banner .sliders {
+.banner .slogan {
     width:1000vw;
     height:100%;
 }
-.banner .slide {
+.banner .slogan-item {
     width:100vw;
     height:100%;
     display:inline-block;
     background-color:rgba(0, 0, 0, 0.8);
 }
-.banner .slidearea {
+.banner .slogan-area {
     display:flex;
     flex-direction:column;
     height:100%;
@@ -113,34 +111,12 @@ header {
     font-size:50px;
 }
 .banner h1 span {
-    color:#B28756;
+    color:#1D9371;
 }
 .banner h2 {
     text-transform: uppercase;
     margin-top:20px;
 }
-.banner .sliders-pointers {
-    width:100vw;
-    height:20px;
-    position:absolute;
-    margin-top:-50px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
-.banner .pointer {
-    width:15px;
-    height:15px;
-    border:2px solid #B28756;
-    border-radius:8px;
-    margin-left:5px;
-    margin-right:5px;
-    cursor:pointer;
-}
-.banner .pointer.active {
-    background-color:#B28756;
-}
-
 
 .default {
     padding-top:50px;
@@ -208,7 +184,7 @@ footer {
     margin-right:10px;
 }
 .footer-social a:hover {
-    background-color:#B28756;
+    background-color:#1D9371;
 }
 .footer-social img {
     height:10px;
@@ -319,7 +295,7 @@ CSS DE ÁREAS ESPECÍFICAS
 }
 .section-projects--filters li:hover,
 .section-projects--filters li.active {
-    border-bottom:3px solid #B28756;
+    border-bottom:3px solid #1D9371;
 }
 .section-projects--filters li:first-child {
     border-left:0;
@@ -412,14 +388,14 @@ CSS DE ÁREAS ESPECÍFICAS
 .section-team-area .pointer {
     width:15px;
     height:15px;
-    border:2px solid #B28756;
+    border:2px solid #1D9371;
     border-radius:8px;
     margin-left:5px;
     margin-right:5px;
     cursor:pointer;
 }
 .section-team-area .pointer.active {
-    background-color:#B28756;
+    background-color:#1D9371;
 }
 .section-team--avatar {
     width:150px;
@@ -451,7 +427,7 @@ CSS DE ÁREAS ESPECÍFICAS
     margin-right:10px;
 }
 .section-team--social a:hover {
-    background-color:#B28756;
+    background-color:#1D9371;
 }
 
 .testimonials .section-body {
@@ -513,14 +489,14 @@ CSS DE ÁREAS ESPECÍFICAS
 .section-testimonials .pointer {
     width:15px;
     height:15px;
-    border:2px solid #B28756;
+    border:2px solid #1D9371;
     border-radius:8px;
     margin-left:5px;
     margin-right:5px;
     cursor:pointer;
 }
 .section-testimonials .pointer.active {
-    background-color:#B28756;
+    background-color:#1D9371;
 }
 
 .section-companies {
@@ -642,14 +618,14 @@ CSS DE ÁREAS ESPECÍFICAS
 .section-premium .pointer {
     width:15px;
     height:15px;
-    border:2px solid #B28756;
+    border:2px solid #1D9371;
     border-radius:8px;
     margin-left:5px;
     margin-right:5px;
     cursor:pointer;
 }
 .section-premium .pointer.active {
-    background-color:#B28756;
+    background-color:#1D9371;
 }
 
 
@@ -662,12 +638,12 @@ CSS DE ÁREAS ESPECÍFICAS
     padding:15px;
 }
 .section-fact h3 {
-    color:#B28756;
+    color:#1D9371;
     font-size:45px;
 }
 .section-fact-line {
     width:20px;
-    border-bottom:2px solid #B28756;
+    border-bottom:2px solid #1D9371;
     margin:auto;
 }
 .section-fact h4 {
@@ -849,7 +825,7 @@ CSS DE ÁREAS ESPECÍFICAS
     }
     .menu li.active a {
         border:0;
-        color:#B28756;
+        color:#1D9371;
     }
 
 
@@ -952,7 +928,7 @@ CSS DE ÁREAS ESPECÍFICAS
     }
     .menu li.active a {
         border:0;
-        color:#B28756;
+        color:#1D9371;
     }
 
     .banner h1 {
