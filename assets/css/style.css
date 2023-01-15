@@ -393,6 +393,12 @@ CSS DE ÁREAS ESPECÍFICAS
 .section-colaborador--avatar {
     width:150px;
     height:auto;
+    border-radius: 75px;
+}
+.section-colaborador--avatar1{
+    height:150px;
+    width: 150px;
+    border-radius: 75px;
 }
 .section-colaborador--name {
     text-transform: uppercase;
@@ -562,6 +568,10 @@ CSS DE ÁREAS ESPECÍFICAS
     background-color:#b71c29;
 }
 
+
+
+
+
 .section-contact {
     max-width:450px;
     margin:auto;
@@ -599,6 +609,9 @@ CSS DE ÁREAS ESPECÍFICAS
     background-position:center;
     padding-top:30px;
     padding-bottom:30px;
+}
+iframe{
+    width: 100vw;
 }
 .section-map--area {
     width:100vw;
