@@ -82,7 +82,7 @@ header {
 .banner {
     height:calc(100vh - 100px);
     background-color:#333;
-    background-image:url('../images/bg.jpg');
+    background-image:url('../images/hotelbg1.png');
     background-size:cover;
     background-position:bottom;
     overflow:hidden;
@@ -219,21 +219,26 @@ footer {
 /*
 CSS DE ÁREAS ESPECÍFICAS
 */
-.section-aboutus {
+.section-sobre {
     display:flex;
 }
-.section-aboutus--left {
+.section-sobre--left {
     flex:1;
 }
-.section-aboutus--left p {
+.section-sobre--left p {
     font-size:14px;
     line-height:25px;
 }
-.section-aboutus--right {
+.section-sobre--left p span{
+    color: #1D9371;
+    text-transform: uppercase;
+    text-decoration: solid;
+}
+.section-sobre--right {
     width:520px;
     text-align:center;
 }
-.section-aboutus--right img {
+.section-sobre--right img {
     width:480px;
     box-shadow:0px 5px 10px #333;
 }
@@ -262,28 +267,32 @@ CSS DE ÁREAS ESPECÍFICAS
     font-size:13px;
     color:#999;
 }
+.section-service img{
+    width: 80px;
+}
 
 
 
 
 
-.section-projects {
+
+.section-acomodacoes {
     display:flex;
     flex-direction: column;
     align-items: center;
 }
-.section-projects--filters {
+.section-acomodacoes--filters {
     border:1px solid #CCC;
     background-color:#EEE;
     border-radius:30px;
     display:inline-block;
     padding:0px 20px;
 }
-.section-projects--filters ul,
-.section-projects--filters li {
+.section-acomodacoes--filters ul,
+.section-acomodacoes--filters li {
     list-style:none;
 }
-.section-projects--filters li {
+.section-acomodacoes--filters li {
     display:inline-block;
     padding:10px;
     text-transform: uppercase;
@@ -293,15 +302,15 @@ CSS DE ÁREAS ESPECÍFICAS
     border-bottom:3px solid #EEE;
     cursor:pointer;
 }
-.section-projects--filters li:hover,
-.section-projects--filters li.active {
+.section-acomodacoes--filters li:hover,
+.section-acomodacoes--filters li.active {
     border-bottom:3px solid #1D9371;
 }
-.section-projects--filters li:first-child {
+.section-acomodacoes--filters li:first-child {
     border-left:0;
 }
 
-.section-projects--photos {
+.section-acomodacoes--photos {
     width:100vw;
     max-width:1140px;
     margin-top:20px;
@@ -309,19 +318,19 @@ CSS DE ÁREAS ESPECÍFICAS
     flex-wrap:wrap;
     justify-content:center;
 }
-.section-projects--photo {
+.section-acomodacoes--photo {
     width:280px;
 }
-.section-projects--photoarea {
+.section-acomodacoes--photoarea {
     margin:10px;
     width:260px;
     height:160px;
 }
-.section-projects--photoarea img {
+.section-acomodacoes--photoarea img {
     width:inherit;
     height:inherit;
 }
-.section-projects--photoinfo {
+.section-acomodacoes--photoinfo {
     position:absolute;
     background-color:rgba(0, 0, 0, 0.5);
     width:inherit;
@@ -332,36 +341,39 @@ CSS DE ÁREAS ESPECÍFICAS
     align-items:center;
     color:#FFF;
 }
-.section-projects--photoinfo h5 {
+.section-acomodacoes--photoinfo h5 {
     font-size:18px;
     font-weight:600;
 }
-.section-projects--photoarea:hover .section-projects--photoinfo {
+.section-acomodacoes--photoarea:hover .section-acomodacoes--photoinfo {
     display:flex;
 }
 
 
+
+
+
 .bg-team {
-    background-image:url('../images/bg.jpg');
+    background-image:url('../images/quartotex4.png');
     background-size:cover;
     background-position:center;
     padding:0;
 }
-.section-team-area {
+.section-colaborador-area {
     background-color:rgba(0, 0, 0, 0.8);
     padding-top:50px;
     padding-bottom:50px;
 }
-.section-team {
+.section-colaborador {
     overflow:hidden;
     max-width:880px;
     margin:auto;
 }
-.section-team .sliders {
+.section-colaborador .area-items {
     width:1000vw;
     height:100%;
 }
-.section-team .slide {
+.section-colaborador .area-item {
     width:280px;
     height:100%;
     min-height:300px;
@@ -369,7 +381,7 @@ CSS DE ÁREAS ESPECÍFICAS
     background-color:#FFF;
     margin-right:20px;
 }
-.section-team .slidearea {
+.section-colaborador .socio-area {
     display:flex;
     flex-direction:column;
     height:100%;
@@ -378,45 +390,26 @@ CSS DE ÁREAS ESPECÍFICAS
     color:#000;
     padding:30px;
 }
-.section-team-area .sliders-pointers {
-    margin-top:30px;
-    height:20px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
-.section-team-area .pointer {
-    width:15px;
-    height:15px;
-    border:2px solid #1D9371;
-    border-radius:8px;
-    margin-left:5px;
-    margin-right:5px;
-    cursor:pointer;
-}
-.section-team-area .pointer.active {
-    background-color:#1D9371;
-}
-.section-team--avatar {
+.section-colaborador--avatar {
     width:150px;
     height:auto;
 }
-.section-team--name {
+.section-colaborador--name {
     text-transform: uppercase;
     font-weight: 600;
     font-size:17px;
     margin-top:30px;
 }
-.section-team--role {
+.section-colaborador--role {
     font-size:14px;
     color:#999;
     margin-top:5px;
 }
-.section-team--social {
+.section-colaborador--social {
     display:flex;
     margin-top:20px;
 }
-.section-team--social a {
+.section-colaborador--social a {
     display:inline-flex;
     justify-content: center;
     align-items:center;
@@ -426,26 +419,34 @@ CSS DE ÁREAS ESPECÍFICAS
     border-radius:13px;
     margin-right:10px;
 }
-.section-team--social a:hover {
+.section-colaborador--social a:hover {
     background-color:#1D9371;
 }
 
-.testimonials .section-body {
+
+
+
+
+
+
+
+
+.feedback .section-body {
     max-width:initial;
 }
-.section-testimonials {
+.section-feedback {
     overflow:hidden;
 }
-.section-testimonials .sliders {
+.section-feedback .area-feedback {
     width:1000vw;
     height:100%;
 }
-.section-testimonials .slide {
+.section-feedback .area-feedback-1 {
     width:100vw;
     height:100%;
     display:inline-block;
 }
-.section-testimonials .slidearea {
+.section-feedback .area-feedback-2 {
     display:flex;
     flex-direction:column;
     height:100%;
@@ -453,22 +454,22 @@ CSS DE ÁREAS ESPECÍFICAS
     align-items:center;
 }
 
-.section-testimonials--avatar {
+.section-feedback--avatar {
     width:100px;
 }
-.section-testimonials--name {
+.section-feedback--name {
     font-weight: bold;
     font-size:16px;
     margin-top:20px;
 }
-.section-testimonials--role {
+.section-feedback--role {
     font-size:14px;
 }
-.section-testimonials--quoteimg {
+.section-feedback--aspasimg {
     width:20px;
     margin-top:30px;
 }
-.section-testimonials--quote {
+.section-feedback--desc {
     margin-top:10px;
     font-size:13px;
     max-width:700px;
@@ -478,180 +479,32 @@ CSS DE ÁREAS ESPECÍFICAS
     margin-left:30px;
     margin-right:30px;
 }
-.section-testimonials .sliders-pointers {
-    width:100vw;
-    height:20px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    margin-top:40px;
-}
-.section-testimonials .pointer {
-    width:15px;
-    height:15px;
-    border:2px solid #1D9371;
-    border-radius:8px;
-    margin-left:5px;
-    margin-right:5px;
-    cursor:pointer;
-}
-.section-testimonials .pointer.active {
-    background-color:#1D9371;
-}
-
-.section-companies {
-    border-top:1px solid #DDD;
-    border-bottom:1px solid #DDD;
-}
-.section-companies--area {
-    display:flex;
-    align-items:center;
-}
-.section-company {
-    flex:1;
-    text-align:center;
-}
-
-.section-price {
-    display:flex;
-}
-.section-price--item {
-    flex:1;
-    background-color: #FFF;
-    margin-right: 20px;
-    padding:20px;
-    text-align:center;
-}
-.section-price--item:last-child {
-    margin-right:0;
-}
-.section-price--item-name {
-    text-transform: uppercase;
-    font-size:13px;
-    font-weight:600;
-}
-.section-price--item-money {
-    font-weight: bold;
-    font-size:22px;
-    margin-top:10px;
-}
-.section-price--item-period {
-    color:#999;
-    text-transform: uppercase;
-    margin-bottom:20px;
-}
-.section-price--item-point {
-    font-size:12px;
-}
-
-.premium {
-    background-color:#FFF !important;
-    border-top:1px solid #CCC;
-}
-.premium .section-body {
-    max-width:initial;
-}
-.section-premium {
-    overflow:hidden;
-}
-.section-premium a {
-    margin-top:30px;
-}
-.section-premium .sliders {
-    width:1000vw;
-    height:100%;
-}
-.section-premium .slide {
-    width:100vw;
-    height:100%;
-    display:inline-block;
-}
-.section-premium .slidearea {
-    display:flex;
-    height:100%;
-    justify-content: center;
-    align-items:center;
-    max-width:1140px;
-    border-bottom:1px solid #CCC;
-    margin:auto;
-    padding-bottom:40px;
-}
-.section-premium--left {
-    flex:1;
-    text-align:right;
-}
-.section-premium--left img {
-    width:300px;
-    margin-right:30px;
-}
-.section-premium--right {
-    flex:1;
-}
-.section-premium--item {
-    display:flex;
-    margin-bottom:20px;
-}
-.section-premium--item img {
-    width:20px;
-    height:20px;
-    margin-right:20px;
-}
-.section-premium--item div {
-    flex:1;
-    color:#999;
-    line-height:20px;
-}
-.section-premium--item div h4 {
-    color:#000;
-    font-size:17px;
-    font-weight:600;
-}
-
-.section-premium .sliders-pointers {
-    width:100vw;
-    height:20px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    margin-top:40px;
-}
-.section-premium .pointer {
-    width:15px;
-    height:15px;
-    border:2px solid #1D9371;
-    border-radius:8px;
-    margin-left:5px;
-    margin-right:5px;
-    cursor:pointer;
-}
-.section-premium .pointer.active {
-    background-color:#1D9371;
-}
 
 
-.section-facts {
+
+.section-dados {
     display:flex;
 }
-.section-fact {
+.section-dado {
     flex:1;
     text-align:center;
     padding:15px;
 }
-.section-fact h3 {
+.section-dado h3 {
     color:#1D9371;
     font-size:45px;
 }
-.section-fact-line {
+.section-dado-line {
     width:20px;
     border-bottom:2px solid #1D9371;
     margin:auto;
 }
-.section-fact h4 {
+.section-dado h4 {
     margin-top:20px;
     text-transform: uppercase;
     font-size:18px;
 }
-.section-fact p {
+.section-dado p {
     margin-top:10px;
     font-size:13px;
     color:#999;
@@ -829,16 +682,16 @@ CSS DE ÁREAS ESPECÍFICAS
     }
 
 
-    .section-aboutus {
+    .section-sobre {
         flex-direction:column;
     }
-    .section-aboutus--left {
+    .section-sobre--left {
         margin-left:30px;
         margin-right:30px;
         margin-bottom:30px;
     }
 
-    .section-aboutus--right {
+    .section-sobre--right {
         width:auto;
     }
 
@@ -853,7 +706,7 @@ CSS DE ÁREAS ESPECÍFICAS
         border-left:0;
     }
 
-    .section-team {
+    .section-colaborador {
         max-width:580px;
     }
 
@@ -869,10 +722,10 @@ CSS DE ÁREAS ESPECÍFICAS
         margin-right:20px;
     }
 
-    .section-facts {
+    .section-dados {
         flex-wrap:wrap;
     }
-    .section-fact {
+    .section-dado {
         min-width:50%;
     }
 
@@ -939,21 +792,21 @@ CSS DE ÁREAS ESPECÍFICAS
     }
 
 
-    .section-aboutus {
+    .section-sobre {
         flex-direction:column;
     }
-    .section-aboutus--left {
+    .section-sobre--left {
         margin-left:30px;
         margin-right:30px;
         margin-bottom:30px;
     }
 
-    .section-aboutus--right {
+    .section-sobre--right {
         width:auto;
         margin-left:30px;
         margin-right:30px;
     }
-    .section-aboutus--right img {
+    .section-sobre--right img {
         width:100%;
     }
 
@@ -968,19 +821,19 @@ CSS DE ÁREAS ESPECÍFICAS
         border-left:0;
     }
 
-    .section-projects--filters {
+    .section-acomodacoes--filters {
         margin-left:30px;
         margin-right:30px;
     }
-    .section-projects--photo {
+    .section-acomodacoes--photo {
         width:320px;
     }
-    .section-projects--photoarea {
+    .section-acomodacoes--photoarea {
         width:300px;
         height:190px;
     }
 
-    .section-team {
+    .section-colaborador {
         max-width:280px;
     }
 
@@ -1016,10 +869,10 @@ CSS DE ÁREAS ESPECÍFICAS
         padding-right:20px;
     }
 
-    .section-facts {
+    .section-dados {
         flex-wrap:wrap;
     }
-    .section-fact {
+    .section-dado {
         min-width:100%;
     }
 
