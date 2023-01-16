@@ -133,7 +133,7 @@ header {
 }
 .default .section-desc {
     font-size:12px;
-    color:#CCC;
+    color:#999;
     margin-top:10px;
     margin-bottom:40px;
 }
@@ -604,14 +604,13 @@ CSS DE ÁREAS ESPECÍFICAS
 
 
 .section-map {
-    background-image:url('../images/mapa.jpg');
     background-size:cover;
     background-position:center;
     padding-top:30px;
     padding-bottom:30px;
 }
 iframe{
-    width: 100vw;
+    width:100%;
 }
 .section-map--area {
     width:100vw;
