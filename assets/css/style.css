@@ -392,7 +392,7 @@ CSS DE ÁREAS ESPECÍFICAS
 }
 .section-colaborador--avatar {
     width:150px;
-    height:auto;
+    height:150px;
     border-radius: 75px;
 }
 .section-colaborador--avatar1{
@@ -462,6 +462,7 @@ CSS DE ÁREAS ESPECÍFICAS
 
 .section-feedback--avatar {
     width:100px;
+    border-radius: 50px;
 }
 .section-feedback--name {
     font-weight: bold;
